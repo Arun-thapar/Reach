@@ -1,0 +1,29 @@
+body{font-size: 16px;font-family:  Arial, Helvetica, sans-serif;}
+#loadingData{display:none; margin:3px 0 0 17px;}
+#table{margin-top: 10px;  border-collapse: collapse;  border-spacing: 0; width: 100%;}
+.crime-heading {padding: 11px 0 11px 6px; background-color: #04AA6D;  color: white;  text-align: left; margin: 0;cursor: pointer;} 
+.subheading-title {text-decoration: underline;}
+.postcode-wrapper, .crimedata-wrapper{ border:1px solid #6f817b; padding:10px; border-radius: 5px; margin:5px;}
+.crimedata-wrapper{padding:1px; display: none;}
+.search-crime{background: #5939ca;color: #fff;}
+.crime-id{font-size: 12px;}
+.invalid-postcode{display: none;}
+.alt{background-color: #ebebeb; margin:0;}
+.alt .col-8{padding:0}
+.og .col-4{padding-left: 10px;}
+.crime-heading-icon{margin:0 5px}
+.snippet{padding-left: 8px;}
+.dot-flashing {margin-left:20px; position: relative; width: 10px; height: 10px; border-radius: 5px; background-color: #61c771; color: #61c771; animation: dotFlashing 1s infinite linear alternate; animation-delay: .5s;}
+.dot-flashing::before, .dot-flashing::after { content: ''; display: inline-block; position: absolute; top: 0;}
+.dot-flashing::before {left: -15px; width: 10px; height: 10px; border-radius: 5px; background-color: #61c771; color: #61c771; animation: dotFlashing 1s infinite alternate; animation-delay: 0s;}
+.dot-flashing::after {left: 15px; width: 10px; height: 10px; border-radius: 5px; background-color: #61c771; color: #61c771; animation: dotFlashing 1s infinite alternate;  animation-delay: 1s;}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: #61c771;
+  }
+  50%,
+  100% {
+    background-color: #d6f3c9;
+  }
+}
